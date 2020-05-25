@@ -1,0 +1,13 @@
+// ------------------------------------------------------------------------- //
+// MIXINS
+
+// 00 CONFIG
+// 01 CUSTOM RESET
+
+// 01 CONTAINER
+// ------------------------------------------------------------------------- //
+%container {
+  margin: 0 auto;
+  padding: 0 $container-padding-hor;
+  max-width: $container-max-width;
+}

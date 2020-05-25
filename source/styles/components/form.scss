@@ -1,0 +1,105 @@
+// ------------------------------------------------------------------------- //
+// FORM
+
+// 00 CONFIG
+$input-color :#a3a3a3;
+
+// ------------------------------------------------------------------------- //
+// 01 INPUT
+// ------------------------------------------------------------------------- //
+
+// 01 COMMON
+// ------------------------------------------------------------------------- //
+::-webkit-input-placeholder {
+  color: $input-color;
+}
+
+::-moz-placeholder {
+  color: $input-color;
+}
+
+:-moz-placeholder {
+  color: $input-color;
+}
+
+:-ms-input-placeholder {
+  color: $input-color;
+}
+
+// 01 INPUT
+// ------------------------------------------------------------------------- //
+input[type='search'],
+input[type='text'],
+input[type='email'] {
+  outline: none;
+  width: 100%;
+  border: 1px solid #dfdfdf;
+  color: $input-color;
+  box-shadow: 0 0 0 1px #c0c0c0;
+  font-family: $ff-primary;
+  box-sizing: border-box;
+}
+
+input[type='search'] {
+  max-width: 255px;
+  padding: 11px 40px 11px 13px;
+  font-size: 14px;
+}
+
+input[type='text'],
+input[type='email'] {
+  font-size: 16px;
+  padding: 14px 13px;
+}
+
+// 01 FORM-CONTROL
+// ------------------------------------------------------------------------- //
+.form-control {
+  position: relative;
+
+  .search-btn {
+    position: absolute;
+    border: none;
+    background: none;
+    right: 0;
+    top: 0;
+    width: 35px;
+    height: 100%;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 21px;
+      height: 21px;
+      background-image: url('../images/icons/search.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+  }
+}
+
+// 01 FORM-CONTROLS
+// ------------------------------------------------------------------------- //
+.form-controls {
+  .form-control {
+    margin: 0 0 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.form-control-descr {
+  margin: 10px 0 0;
+  padding: 0 8px;
+  font-size: 12px;
+  color: #101010;
+  text-align: center;
+
+  .link {
+    color: inherit;
+    text-decoration: underline;
+  }
+}

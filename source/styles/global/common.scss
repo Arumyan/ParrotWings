@@ -1,0 +1,79 @@
+// ------------------------------------------------------------------------- //
+// COMMON
+
+// 01 CUSTOM RESET
+// 02 LAYOUT
+// 03 CONTAINER
+// ------------------------------------------------------------------------- //
+
+// 01 CUSTOM RESET
+// ------------------------------------------------------------------------- //
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+// 02 LAYOUT
+// ------------------------------------------------------------------------- //
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: $header-height 0 0;
+  background-color: $body-bg-color;
+  font-family: $ff-primary;
+
+  .header {
+    flex: 0 0 auto;
+  }
+
+  .main-content {
+    flex: 1 0 auto;
+
+    .content-wrapper {
+      display: flex;
+      padding: 40px $content-padding-hor 30px;
+      background-color: $content-bg-color;
+
+      .content {
+        flex: 1 1 auto;
+      }
+
+      .aside {
+        flex: 0 0 auto;
+        margin: 0 0 0 43px;
+        max-width: 388px;
+        width: 100%;
+      }
+    }
+  }
+
+  .footer {
+    flex: 0 0 auto;
+  }
+}
+
+// 03 CONTAINER
+// ------------------------------------------------------------------------- //
+.container {
+  @extend %container;
+}

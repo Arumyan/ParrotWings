@@ -1,0 +1,27 @@
+// ------------------------------------------------------------------------- //
+// VARIABLES
+
+// 00 CONFIG
+// 01 HEADER
+// ------------------------------------------------------------------------- //
+
+// 01 HEADER
+// ------------------------------------------------------------------------- //
+.header {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $header-height;
+  background-image: url('../images/header/header-bg.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  z-index: 10;
+
+  .nav {
+    margin-top: auto;
+  }
+}

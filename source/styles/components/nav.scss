@@ -1,0 +1,49 @@
+// ------------------------------------------------------------------------- //
+// NAV
+
+// 00 CONFIG
+// 01 NAV
+// ------------------------------------------------------------------------- //
+
+// 01 NAV
+// ------------------------------------------------------------------------- //
+.nav {
+  background-color: rgba(#000, 0.85);
+
+  .nav-list {
+    @extend %container;
+
+    display: flex;
+    justify-content: center;
+
+    .nav-link {
+      position: relative;
+      display: block;
+      padding: 10px 53px;
+      font-family: $ff-secondary;
+      font-size: 26px;
+      color: #fff;
+      transition: background 0.2s;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        height: 6px;
+        background-color: transparent;
+        transition: background 0.2s;
+      }
+
+      &:hover {
+        background-color: #b4b4b4;
+
+        &::before {
+          background-color: #7dff60;
+        }
+      }
+    }
+  }
+}

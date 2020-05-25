@@ -1,0 +1,26 @@
+// ------------------------------------------------------------------------- //
+// CONTENT
+
+// 00 CONFIG
+// 01 CONTENT
+// ------------------------------------------------------------------------- //
+
+// 01 CONTENT
+// ------------------------------------------------------------------------- //
+.content {
+  .content-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 0 0;
+
+    .content-title {
+      font-family: $ff-secondary;
+      font-size: 34px;
+      color: #121212;
+    }
+
+    .content-actions {
+      margin: 0 0 0 auto;
+    }
+  }
+}
