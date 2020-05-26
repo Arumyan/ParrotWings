@@ -1,0 +1,59 @@
+// ------------------------------------------------------------------------- //
+// POPUP
+
+// 00 CONFIG
+// 01 POPUP
+
+// 00 CONFIG
+// ------------------------------------------------------------------------- //
+$popup-arrow-height: 12px;
+
+// 01 POPUP
+// ------------------------------------------------------------------------- //
+.popup {
+  position: absolute;
+  z-index: 9;
+  max-width: 248px;
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 6px;
+  background-color: #000;
+  opacity: 0.7;
+
+  // style for position popup, only for static
+  bottom: 30px + $popup-arrow-height;
+  width: 248px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  .popup-arrow {
+    position: absolute;
+    bottom: -$popup-arrow-height;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: $popup-arrow-height solid #000;
+  }
+
+  .popup-header {
+    margin: 0 0 12px;
+
+    .popup-title {
+      font-size: 14px;
+      font-weight: bold;
+      color: #d3d3d3;
+      text-align: center;
+      font-family: $ff-primary;
+    }
+  }
+
+  .popup-body {
+    text-align: center;
+    font-family: $ff-primary;
+    font-size: 12px;
+    color: #d3d3d3;
+  }
+}

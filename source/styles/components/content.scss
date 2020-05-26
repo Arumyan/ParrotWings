@@ -3,8 +3,10 @@
 
 // 00 CONFIG
 // 01 CONTENT
+// 02 CONTENT SECTION
 // ------------------------------------------------------------------------- //
 
+// ------------------------------------------------------------------------- //
 // 01 CONTENT
 // ------------------------------------------------------------------------- //
 .content {
@@ -12,6 +14,7 @@
     display: flex;
     align-items: center;
     padding: 10px 0 0;
+    margin: 0 0 30px;
 
     .content-title {
       font-family: $ff-secondary;
@@ -19,8 +22,36 @@
       color: #121212;
     }
 
-    .content-actions {
+    .content-header-actions {
       margin: 0 0 0 auto;
+    }
+  }
+}
+
+// ------------------------------------------------------------------------- //
+// 02 CONTENT SECTION
+// ------------------------------------------------------------------------- //
+.content-section {
+  .content-section-header {
+    margin: 0 0 30px;
+
+    .content-section-title {
+      font-size: 26px;
+      font-family: $ff-secondary;
+      position: relative;
+      color: #121212;
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: -25px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 19px;
+        height: 8px;
+        background-color: #933435;
+      }
     }
   }
 }

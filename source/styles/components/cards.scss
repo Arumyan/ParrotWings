@@ -1,0 +1,65 @@
+// ------------------------------------------------------------------------- //
+// CARDS
+
+// 00 CONFIG
+// 01 CARDS
+// ------------------------------------------------------------------------- //
+
+// 00 CONFIG
+// ------------------------------------------------------------------------- //
+$card-padding-hor   : 16px;
+$card-padding-ver    : 24px;
+
+// ------------------------------------------------------------------------- //
+// 01 CARDS
+// ------------------------------------------------------------------------- //
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -#{$card-padding-ver} -#{$card-padding-hor};
+
+  .card {
+    position: relative;
+    flex: 0 0 auto;
+    width: 110px;
+    text-align: center;
+    margin: $card-padding-ver $card-padding-hor;
+
+    .card-img-wrap {
+      border-radius: 3px;
+      border: 1px solid #9d9d9d;
+      box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.34);
+      overflow: hidden;
+      margin: 0 auto 10px;
+
+      .card-img {
+        vertical-align: middle;
+      }
+    }
+
+    .card-count {
+      font-size: 11px;
+      font-family: $ff-primary;
+      color: #525252;
+      line-height: 1;
+    }
+
+    .card-title {
+      @include ellipsis();
+
+      margin: 0 0 10px;
+      font-size: 18px;
+      color: #121212;
+      font-family: $ff-secondary;
+    }
+
+    .btn {
+      margin: 0 auto;
+    }
+  }
+}
+
+.cards-action {
+  margin: 45px 0 0;
+  text-align: center;
+}

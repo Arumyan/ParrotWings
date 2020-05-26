@@ -39,7 +39,10 @@ body {
   flex-direction: column;
   min-height: 100vh;
   padding: $header-height 0 0;
-  background-color: $body-bg-color;
+  background: url('../images/main-bg.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   font-family: $ff-primary;
 
   .header {
@@ -61,7 +64,7 @@ body {
       .aside {
         flex: 0 0 auto;
         margin: 0 0 0 43px;
-        max-width: 388px;
+        max-width: $aside-width;
         width: 100%;
       }
     }

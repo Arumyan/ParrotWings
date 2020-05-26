@@ -2,12 +2,23 @@
 // MIXINS
 
 // 00 CONFIG
-// 01 CUSTOM RESET
+// 01 CONTAINER
+// 02 ELLIPSIS
 
+// ------------------------------------------------------------------------- //
 // 01 CONTAINER
 // ------------------------------------------------------------------------- //
 %container {
   margin: 0 auto;
   padding: 0 $container-padding-hor;
   max-width: $container-max-width;
+}
+
+// ------------------------------------------------------------------------- //
+// 02 ELLIPSIS
+// ------------------------------------------------------------------------- //
+@mixin ellipsis() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
