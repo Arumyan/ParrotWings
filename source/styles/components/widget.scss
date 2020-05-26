@@ -13,7 +13,7 @@
   z-index: 1;
   display: flex;
   flex-direction: column;
-  padding: 23px;
+  padding: 18px 23px;
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.35);
   width: 100%;
   min-height: 325px;
@@ -27,7 +27,7 @@
 
   .widget-header {
     position: relative;
-    padding: 0 0 15px;
+    padding: 0 0 15px 10px;
     margin: 0 0 13px;
     border-bottom: 1px solid #e4e4e4;
 
@@ -92,7 +92,7 @@
       .spinner {
         width: 75px;
         height: 75px;
-        margin: 0 0 10px;
+        margin: 0 0 3px;
       }
 
       .loading-txt {
