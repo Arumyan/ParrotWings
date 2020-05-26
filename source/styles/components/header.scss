@@ -1,10 +1,7 @@
 // ------------------------------------------------------------------------- //
 // VARIABLES
 
-// 00 CONFIG
-// 01 HEADER
 // ------------------------------------------------------------------------- //
-
 // 01 HEADER
 // ------------------------------------------------------------------------- //
 .header {
@@ -21,7 +18,63 @@
   background-size: cover;
   z-index: 10;
 
+  @media (max-width: 760px) {
+    height: $header-height-mobile;
+  }
+
   .nav {
     margin-top: auto;
+
+    @media (max-width: 760px) {
+      display: none;
+    }
+  }
+
+  .content-title {
+    display: none;
+
+    @media (max-width: 760px) {
+      display: block;
+      margin-top: auto;
+      background-color: rgba(#000, 0.8);
+      text-align: center;
+      color: #fff;
+      font-size: 28px;
+      font-family: $ff-secondary;
+      padding: 8px 0;
+    }
+  }
+
+  .header-mobile {
+    display: none;
+
+    @media (max-width: 760px) {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px $content-padding-hor-mobile 0;
+
+      .header-mobile-menu,
+      .header-mobile-search {
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-color: transparent;
+        border: none;
+        outline: none;
+      }
+
+      .header-mobile-menu {
+        width: 30px;
+        height: 24px;
+        background-image: url('../images/icons/menu.svg');
+      }
+
+      .header-mobile-search {
+        width: 24px;
+        height: 24px;
+        background-image: url('../images/icons/search-white.svg');
+      }
+    }
   }
 }

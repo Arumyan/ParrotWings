@@ -44,6 +44,10 @@ input[type='search'] {
   width: 255px;
   padding: 11px 40px 11px 13px;
   font-size: 14px;
+
+  @media (max-width: 1340px) {
+    width: 180px;
+  }
 }
 
 input[type='text'],

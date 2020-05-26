@@ -3,6 +3,7 @@
 
 // 00 CONFIG
 // 01 CARDS
+// 02 CARDS ACTION
 // ------------------------------------------------------------------------- //
 
 // 00 CONFIG
@@ -57,9 +58,21 @@ $card-padding-ver    : 24px;
       margin: 0 auto;
     }
   }
+
+  @media (max-width: 760px) {
+    margin-bottom: 20px;
+    justify-content: center;
+  }
 }
 
+// ------------------------------------------------------------------------- //
+// 02 CARDS ACTION
+// ------------------------------------------------------------------------- //
 .cards-action {
   margin: 45px 0 0;
   text-align: center;
+
+  @media (max-width: 760px) {
+    display: none;
+  }
 }

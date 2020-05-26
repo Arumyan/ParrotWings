@@ -1,15 +1,10 @@
 // ------------------------------------------------------------------------- //
 // FOOTER
 
-// 00 CONFIG
 // 01 SOCIAL
 // 02 FOOTER
 // 03 FOOTER NAV
 // ------------------------------------------------------------------------- //
-
-// 00 CONFIG
-// ------------------------------------------------------------------------- //
-$footer-social-opacity: 1;
 
 // ------------------------------------------------------------------------- //
 // 01 SOCIAL
@@ -23,7 +18,7 @@ $footer-social-opacity: 1;
     display: block;
     background-repeat: no-repeat;
     background-position: center center;
-    opacity: $footer-social-opacity;
+    background-size: contain;
     transition: transform 0.2s;
 
     &:hover {
@@ -34,37 +29,87 @@ $footer-social-opacity: 1;
       width: 40px;
       height: 47px;
       background-image: url('../images/social/social1.png');
+
+      @media (max-width: 960px) {
+        width: 36px;
+        height: 36px;
+      }
     }
 
     &.fb {
       width: 41px;
       height: 41px;
       background-image: url('../images/social/fb.png');
+
+      @media (max-width: 960px) {
+        width: 36px;
+        height: 36px;
+      }
     }
 
     &.pint {
       width: 35px;
       height: 41px;
       background-image: url('../images/social/pint.png');
+
+      @media (max-width: 960px) {
+        width: 32px;
+        height: 36px;
+      }
     }
 
     &.tw {
       width: 47px;
       height: 39px;
       background-image: url('../images/social/tw.png');
+
+      @media (max-width: 960px) {
+        width: 36px;
+        height: 36px;
+      }
     }
 
     &.ytb {
       width: 50px;
       height: 39px;
       background-image: url('../images/social/ytb.png');
+
+      @media (max-width: 960px) {
+        width: 38px;
+        height: 30px;
+      }
     }
 
     &.gh {
       width: 48px;
       height: 39px;
       background-image: url('../images/social/gh.png');
+
+      @media (max-width: 960px) {
+        width: 36px;
+        height: 30px;
+      }
     }
+  }
+}
+
+// ------------------------------------------------------------------------- //
+// 02 COPY
+// ------------------------------------------------------------------------- //
+.copy {
+  display: flex;
+  align-items: center;
+  color: #444;
+  font-size: 32px;
+
+  .copy-sign {
+    margin: 0 5px 0 0;
+    position: relative;
+    top: 3px;
+  }
+
+  .copy-brand {
+    font-family: $ff-secondary;
   }
 }
 
@@ -84,27 +129,26 @@ $footer-social-opacity: 1;
     display: flex;
     padding: 20px $content-padding-hor;
 
+    @media (max-width: 960px) {
+      padding-left: $content-padding-hor-mobile;
+      padding-right: $content-padding-hor-mobile;
+    }
+
     .social {
       width: calc(100% - 20px - #{$aside-width});
+
+      @media (max-width: 960px) {
+        width: auto;
+        flex: 1 1 auto;
+      }
     }
 
     .copy {
       flex: 1 1 auto;
-      display: flex;
-      align-items: center;
       justify-content: flex-end;
-      color: #444;
-      opacity: $footer-social-opacity;
-      font-size: 32px;
 
-      .copy-sign {
-        margin: 0 5px 0 0;
-        position: relative;
-        top: 3px;
-      }
-
-      .copy-brand {
-        font-family: $ff-secondary;
+      @media (max-width: 960px) {
+        display: none;
       }
     }
   }
@@ -125,15 +169,36 @@ $footer-social-opacity: 1;
     display: flex;
     padding: 0 $content-padding-hor;
 
+    @media (max-width: 960px) {
+      display: block;
+      padding-left: $content-padding-hor-mobile;
+      padding-right: $content-padding-hor-mobile;
+    }
+
     .footer-section {
       max-width: 210px;
 
+      @media (max-width: 960px) {
+        flex: 1 1 auto;
+        text-align: center;
+        max-width: 100%;
+        margin: 0 0 50px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
       &:nth-child(1) {
         margin: 0 110px 0 0;
+
+        @media (max-width: 960px) {
+          margin: 0 0 50px;
+        }
       }
 
       &:nth-child(2) {
-        margin: 0 72px 0 0;
+        margin: 0 0 50px;
       }
 
       &.footer-notice {
@@ -159,6 +224,25 @@ $footer-social-opacity: 1;
           font-size: 14px;
           color: #5c5c5c;
           font-family: $ff-primary;
+        }
+
+        @media (max-width: 960px) {
+          display: block;
+          max-width: 260px;
+          margin: 0 auto 50px;
+          text-align: center;
+        }
+      }
+
+      &.footer-copy {
+        display: none;
+
+        .copy {
+          justify-content: center;
+        }
+
+        @media (max-width: 960px) {
+          display: block;
         }
       }
 

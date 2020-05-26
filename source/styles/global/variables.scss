@@ -5,18 +5,22 @@
 // 02 COMPONENTS
 // ------------------------------------------------------------------------- //
 
+// ------------------------------------------------------------------------- //
 // 01 FONTS
 // ------------------------------------------------------------------------- //
 $ff-primary             : 'ArialRegular', sans-serif;
 $ff-secondary           : 'OswaldLight', sans-serif;
 
+// ------------------------------------------------------------------------- //
 // 02 COMPONENTS
 // ------------------------------------------------------------------------- //
 $container-padding-hor   : 115px;
 $container-max-width     : 1600px;
 
 $header-height           : 156px;
+$header-height-mobile    : 110px;
 $aside-width             : 340px;
 $aside-margin-right      : 43px;
 
-$content-padding-hor     : 47px;
+$content-padding-hor            : 47px;
+$content-padding-hor-mobile     : 15px;

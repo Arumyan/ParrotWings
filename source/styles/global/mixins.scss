@@ -1,7 +1,6 @@
 // ------------------------------------------------------------------------- //
 // MIXINS
 
-// 00 CONFIG
 // 01 CONTAINER
 // 02 ELLIPSIS
 
@@ -12,6 +11,14 @@
   margin: 0 auto;
   padding: 0 $container-padding-hor;
   max-width: $container-max-width;
+
+  @media (max-width: 1340px) {
+    padding: 0 40px;
+  }
+
+  @media (max-width: 1200px) {
+    padding: 0;
+  }
 }
 
 // ------------------------------------------------------------------------- //
