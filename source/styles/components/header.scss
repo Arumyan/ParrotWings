@@ -33,9 +33,9 @@
   .content-title {
     display: none;
     margin-top: auto;
-    background-color: rgba(#000, 0.8);
+    background-color: rgba($black, 0.8);
     text-align: center;
-    color: #fff;
+    color: $white;
     font-size: em(28);
     font-family: $ff-secondary;
     font-weight: normal;

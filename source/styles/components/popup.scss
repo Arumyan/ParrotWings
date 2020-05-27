@@ -19,14 +19,16 @@ $popup-arrow-height: 12px;
   width: 100%;
   padding: 14px 18px;
   border-radius: 6px;
-  background-color: #000;
+  background-color: $black;
   opacity: 0.7;
 
   // style for position popup, only for static
+  /* stylelint-disable */
   bottom: 30px + $popup-arrow-height;
   width: 248px;
   left: 50%;
   transform: translateX(-50%);
+  /* stylelint-enable */
 
   @media (max-width: 1340px) {
     max-width: 145px;
@@ -41,7 +43,7 @@ $popup-arrow-height: 12px;
     height: 0;
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
-    border-top: $popup-arrow-height solid #000;
+    border-top: $popup-arrow-height solid $black;
   }
 
   .popup-header {

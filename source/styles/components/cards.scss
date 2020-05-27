@@ -6,9 +6,10 @@
 // 02 CARDS ACTION
 // ------------------------------------------------------------------------- //
 
+// ------------------------------------------------------------------------- //
 // 00 CONFIG
 // ------------------------------------------------------------------------- //
-$card-padding-hor   : 16px;
+$card-padding-hor    : 16px;
 $card-padding-ver    : 24px;
 
 // ------------------------------------------------------------------------- //
@@ -29,7 +30,7 @@ $card-padding-ver    : 24px;
     .card-img-wrap {
       border-radius: 3px;
       border: 1px solid #9d9d9d;
-      box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.34);
+      box-shadow: 0 1px 5px 0 rgba($black, 0.34);
       overflow: hidden;
       margin: 0 auto 10px;
 

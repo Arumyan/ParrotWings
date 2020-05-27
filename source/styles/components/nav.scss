@@ -5,7 +5,7 @@
 // 01 NAV
 // ------------------------------------------------------------------------- //
 .nav {
-  background-color: rgba(#000, 0.85);
+  background-color: rgba($black, 0.85);
 
   .nav-list {
     @extend %container;
@@ -19,7 +19,7 @@
       padding: 8px 50px;
       font-family: $ff-secondary;
       font-size: em(26);
-      color: #fff;
+      color: $white;
       transition: background 0.2s;
 
       @media (max-width: 1340px) {
