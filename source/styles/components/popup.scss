@@ -48,7 +48,7 @@ $popup-arrow-height: 12px;
     margin: 0 0 12px;
 
     .popup-title {
-      font-size: 14px;
+      font-size: em(14);
       font-weight: bold;
       color: #d3d3d3;
       text-align: center;
@@ -59,7 +59,7 @@ $popup-arrow-height: 12px;
   .popup-body {
     text-align: center;
     font-family: $ff-primary;
-    font-size: 12px;
+    font-size: em(12);
     color: #d3d3d3;
   }
 }

@@ -51,7 +51,7 @@
     }
 
     .widget-title {
-      font-size: 28px;
+      font-size: em(28);
       font-family: $ff-secondary;
       color: #222;
     }
@@ -105,7 +105,7 @@
 
       .loading-txt {
         font-family: $ff-primary;
-        font-size: 16px;
+        font-size: em(16);
         color: #646464;
       }
     }

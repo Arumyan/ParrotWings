@@ -18,13 +18,13 @@
       display: block;
       padding: 8px 50px;
       font-family: $ff-secondary;
-      font-size: 26px;
+      font-size: em(26);
       color: #fff;
       transition: background 0.2s;
 
       @media (max-width: 1340px) {
         padding: 8px 25px;
-        font-size: 24px;
+        font-size: em(24);
       }
 
       &::before {

@@ -100,7 +100,7 @@
   display: flex;
   align-items: center;
   color: #444;
-  font-size: 32px;
+  font-size: em(32);
 
   .copy-sign {
     margin: 0 5px 0 0;
@@ -225,7 +225,7 @@
         }
 
         .footer-notice-txt {
-          font-size: 14px;
+          font-size: em(14);
           color: #5c5c5c;
           font-family: $ff-primary;
         }
@@ -253,7 +253,7 @@
       .footer-section-title {
         margin: 0 0 15px;
         font-family: $ff-secondary;
-        font-size: 26px;
+        font-size: em(26);
         color: #444;
       }
 
@@ -267,7 +267,7 @@
         }
 
         .footer-nav-link {
-          font-size: 16px;
+          font-size: em(16);
           font-family: $ff-secondary;
           color: #bbb;
         }
