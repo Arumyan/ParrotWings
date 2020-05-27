@@ -13,7 +13,7 @@
   max-width: $container-max-width;
 
   @media (max-width: 1340px) {
-    padding: 0 40px;
+    padding: 0 $container-padding-hor-md;
   }
 
   @media (max-width: 1200px) {

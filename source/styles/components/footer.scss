@@ -199,6 +199,10 @@
 
       &:nth-child(2) {
         margin: 0 50px 0 0;
+
+        @media (max-width: 960px) {
+          margin: 0 0 50px;
+        }
       }
 
       &.footer-notice {

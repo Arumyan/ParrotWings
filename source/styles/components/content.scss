@@ -22,7 +22,7 @@
 
     .content-title {
       font-family: $ff-secondary;
-      font-size: 34px;
+      font-size: em(34);
       color: #121212;
       line-height: 1;
     }
@@ -47,7 +47,7 @@
     margin: 0 0 30px;
 
     .content-section-title {
-      font-size: 26px;
+      font-size: em(28);
       font-family: $ff-secondary;
       position: relative;
       color: #121212;
